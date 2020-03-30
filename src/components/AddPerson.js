@@ -32,7 +32,7 @@ class AddPerson extends React.Component {
                 }
             );
         } else {
-            alert("input valid age");
+            alert("input valid age, numbers only please.");
         }
     };
     handleChange = e => {
