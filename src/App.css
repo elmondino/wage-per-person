@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -35,4 +36,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  max-width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form {
+  margin-top: 20px;
 }
