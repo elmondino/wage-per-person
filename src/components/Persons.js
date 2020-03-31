@@ -7,14 +7,14 @@ import UpdateMoney from './UpdateMoney'
 class Persons extends React.Component {
     state = {
         persons: [
-            { title: "Mr", firstName: "Ben", lastName: "Newton", age: 40, id: uuid() },
-            { title: "Mr", firstName: "John", lastName: "Dowie", age: 50, id: uuid() },
-            { title: "Mrs", firstName: "Scarlet", lastName: "Town", age: 110, id: uuid() }
+            { title: "Mr", firstName: "Ben", lastName: "Newton", age: 50, id: uuid() },
+            { title: "Mr", firstName: "John", lastName: "Dowie", age: 30, id: uuid() },
+            { title: "Mrs", firstName: "Scarlet", lastName: "Town", age: 20, id: uuid() }
         ],
         money: 100,
         amountPerYear: ''
     };
-    //divide money per individual and work out how much each should receive
+    //divide money per individuals age
     splitMoney = () => {
         let totalAge = 0;
         this.state.persons.forEach((person) => {
