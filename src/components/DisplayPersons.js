@@ -1,7 +1,7 @@
 import React from "react";
 
 const DisplayPersons = ({ persons, amountPerYear }) => {
-    const showPersons = persons ? (
+    const showPersons = persons.length ? (
         persons.map(person => {
             let money = parseFloat(person.age * amountPerYear).toFixed(2);
             if (isNaN(money)) {
